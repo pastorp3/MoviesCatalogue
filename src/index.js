@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import Routes from './Router';
 import reportWebVitals from './reportWebVitals';
+import moviesReducer from './reducers/movies';
+
+const store = createStore(moviesReducer);
 
 ReactDOM.render(
-  <Routes />,
+  <Provider store={store}>
+    <Routes />
+  </Provider>,
   document.getElementById('root'),
 );
 

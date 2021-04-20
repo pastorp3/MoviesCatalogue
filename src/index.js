@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import Routes from './Router';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import reportWebVitals from './reportWebVitals';
-import moviesReducer from './reducers/movies';
+import RootReducer from './reducers';
+import Routes from './Router';
 
-const store = createStore(moviesReducer);
+const store = createStore(RootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>

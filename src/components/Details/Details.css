@@ -1,0 +1,104 @@
+.details-poster {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.main-container-details {
+  padding: 30px 50px 30px 50px;
+  background-image: linear-gradient(to right, rgba(8.63%, 8.24%, 8.63%, 1.00) 150px, rgba(8.63%, 8.24%, 8.63%, 0.84) 100%);
+  display: flex;
+  font-family: sans-serif;
+}
+
+
+.poster-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right -200px top;
+}
+
+.details-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.details-text {
+  padding: 30px 0 30px 50px;
+  color: white;
+}
+
+.details-language {
+  margin-left: 5px;
+}
+
+.details-dot {
+  align-items: center;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.genre {
+  margin-right: 5px;
+}
+
+.details-progress {
+  width: 110px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  align-items: center;
+}
+
+.details-score {
+  margin-left: 10px;
+}
+
+.details-second-container {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.play-icon {
+  width: 80px;
+  height: 80px;
+  padding-left: 20px;
+}
+
+.tagline {
+  color: gainsboro;
+}
+
+.overview-title {
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details-companies {
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 30px 50px 30px 50px;
+  font-family: sans-serif;
+}
+
+.details-status {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.companies-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-company {
+  margin-right: 20px;
+  width: 150px;
+  height: 120px;
+}

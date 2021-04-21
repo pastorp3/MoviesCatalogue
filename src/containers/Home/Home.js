@@ -1,11 +1,14 @@
-/* eslint-disable arrow-body-style, react/forbid-prop-types, max-len */
+/* eslint-disable arrow-body-style, react/forbid-prop-types, max-len, radix */
 
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './Home.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchGenre, fetchMovies } from '../../actions/actions';
 import Movie from '../../components/Movie/Movie';
+import Navbar from '../../components/Navbar/Navbar';
+import Filter from '../../components/Filter/Filter';
+import Footer from '../../components/Footer/Footer';
 
 const Home = ({
   movies,
@@ -13,7 +16,6 @@ const Home = ({
   getMovies,
   getGenres,
 }) => {
-  console.log(movies);
   useEffect(async () => {
     await getMovies();
     await getGenres();
@@ -25,19 +27,28 @@ const Home = ({
     tmp.map((x) => values.push(x.name));
     return values;
   };
+  const [filter, setFilter] = useState('All');
+  const handleFilter = (e) => {
+    setFilter(e.target.value);
+  };
   const fetchedMovies = movies && movies;
+  const filterMovies = movies && filter !== 'All' ? movies.filter((movie) => movie.genre_ids.includes(parseInt(filter))) : movies;
 
   return (
     <div>
-      <h1>Home</h1>
-      { fetchedMovies && fetchedMovies.map((movie) => <Movie key={movie.id} movieGenres={genres && matchGenre(movie.genre_ids)} title={movie.original_title} year={movie.release_date} />) }
+      <Navbar />
+      <Filter data={genres} change={handleFilter} />
+      <div className="movies-container">
+        { fetchedMovies && filterMovies.map((movie) => <Movie key={movie.id} poster={movie.poster_path} id={movie.id} movieGenres={genres && matchGenre(movie.genre_ids)} title={movie.original_title} year={movie.release_date} />) }
+      </div>
+      <Footer />
     </div>
   );
 };
 
 Home.propTypes = {
-  movies: PropTypes.bool.isRequired,
-  genres: PropTypes.bool.isRequired,
+  movies: PropTypes.array.isRequired,
+  genres: PropTypes.array.isRequired,
   getMovies: PropTypes.func.isRequired,
   getGenres: PropTypes.func.isRequired,
 };

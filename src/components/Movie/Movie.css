@@ -1,0 +1,29 @@
+.Movie-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.poster {
+  max-width: 180px;
+  max-height: 225px;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 6px 23px 3px rgba(0,0,0,0.4); 
+  box-shadow: -2px 6px 23px 3px rgba(0,0,0,0.4);
+}
+
+.movie-title {
+  font-weight: bold;
+}
+
+.movie-info {
+  padding: 10px 10px 0 10px;
+}
+
+.movie-date {
+  color: gray;
+}
+

@@ -6,11 +6,10 @@
 
 .main-container-details {
   padding: 30px 50px 30px 50px;
-  background-image: linear-gradient(to right, rgba(8.63%, 8.24%, 8.63%, 1.00) 150px, rgba(8.63%, 8.24%, 8.63%, 0.84) 100%);
+  background-image: linear-gradient(to right, rgba(8.63%, 8.24%, 8.63%, 1) 150px, rgba(8.63%, 8.24%, 8.63%, 0.84) 100%);
   display: flex;
   font-family: sans-serif;
 }
-
 
 .poster-background {
   background-size: cover;

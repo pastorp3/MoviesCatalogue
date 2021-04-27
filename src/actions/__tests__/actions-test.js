@@ -3,11 +3,12 @@ import { SET_MOVIES } from "../types";
 
 describe('Tests Action', () => {
   it('should create a action with SET_MOVIE type', () => {
-    const data = {id: 1, name: 'Start Wars'};
+    const payload = {id: 1, name: 'Start Wars'};
     const expectation = {
       type: SET_MOVIES,
-      data,
+      payload,
     }
-    expect(setMovies(data)).toEqual(expectation);
+    expect(setMovies(payload)).toEqual(expectation);
   })
 })
+

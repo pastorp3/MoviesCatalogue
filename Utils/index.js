@@ -12,3 +12,8 @@ export const checkProps = (component, expectedProps) => {
   const propsErr = checkPropTypes(component.propTypes, expectedProps, 'props', component.name);
   return propsErr;
 }
+
+export const testStore = (initialState) => {
+  const createStoreMiddleware = applyMiddleware(thunk)(createStore);
+  return createStoreMiddleware(RootReducer, initialState);
+};

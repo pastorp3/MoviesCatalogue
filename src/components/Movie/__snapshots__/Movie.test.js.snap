@@ -21,7 +21,7 @@ exports[`Movie Component Should render according with snapshout whithout error 1
   </div>
   <div
     className="movie-info"
-    data-info="Movie-info"
+    data-test="Movie-info"
   >
     <span
       className="movie-title"

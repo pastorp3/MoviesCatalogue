@@ -18,7 +18,7 @@ const Movie = ({
           <img alt="poster" src={imgSrc} className="poster" />
         </Link>
       </div>
-      <div data-info="Movie-info" className="movie-info">
+      <div data-test="Movie-info" className="movie-info">
         <span className="movie-title">{title}</span>
         <br />
         <span className="movie-date">{year}</span>

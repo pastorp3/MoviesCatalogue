@@ -8,4 +8,4 @@ describe('Details Component', () => {
     const tree = renderer.create(<MemoryRouter><Details /></MemoryRouter>).toJSON();
     expect(tree).toMatchSnapshot();
   });
-})
+});

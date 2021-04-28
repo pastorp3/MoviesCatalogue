@@ -8,11 +8,11 @@ import { findByTestAtrr, testStore } from '../../../Utils';
 import RootReducer from '../../reducers';
 import Home from './Home';
 
-const setUp = (initialState={}) => {
+const setUp = (initialState = {}) => {
   const store = testStore(initialState);
-  const wrapper = shallow(<Home store={store}/>);
+  const wrapper = shallow(<Home store={store} />).childAt(0).dive();
   return wrapper;
-}
+};
 
 describe('Home Component', () => {
   let wrapper;
@@ -20,6 +20,9 @@ describe('Home Component', () => {
     const initialState = {
       movies: [{
         title: 'Test1',
+        original_title: 'Test1',
+        release_date: '01-01-21',
+        poster_path: 'Test1',
         id: 1,
       }]
     };
@@ -38,8 +41,7 @@ describe('Home Component', () => {
         <Provider store={store}>
           <Home />
         </Provider>
-      </BrowserRouter>
-    ).toJSON();
+      </BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
   });
-}) 
+});

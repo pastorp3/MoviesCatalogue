@@ -1,21 +1,19 @@
+/* eslint-disable  preact/jsx-props-no-spreading */
 import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import Filter from './Filter';
 import { checkProps, findByTestAtrr } from '../../../Utils';
 
-const testFunc = (e) => {
-  return e;
-}
+const testFunc = (e) => e;
 
-const setUp = (props={
+const setUp = (props = {
   data: [],
   change: testFunc,
 }) => {
   const component = shallow(<Filter {...props} />);
   return component;
-}
-
+};
 
 describe('Filter Component', () => {
   describe('Checking ProrTypes', () => {
@@ -25,14 +23,14 @@ describe('Filter Component', () => {
         change: testFunc,
       };
       const propsErr = checkProps(Filter, expectedProps);
-      expect(propsErr).toBeUndefined;
-    })
+      expect(propsErr).toBe(undefined);
+    });
   });
 
   let component;
   beforeEach(() => {
     component = setUp();
-  })
+  });
 
   it('Should render whitout error', () => {
     const wrappre = findByTestAtrr(component, 'Filter');
@@ -48,8 +46,10 @@ describe('Filter Component', () => {
     const props = {
       data: [],
       change: testFunc,
-    }
+    };
     const tree = renderer.create(<Filter {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-})
+});
+
+/* eslint-enable */

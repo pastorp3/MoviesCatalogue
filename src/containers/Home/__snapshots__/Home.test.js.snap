@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component Should render according with snapshout whithout error 1`] = `
+<div
+  data-test="home-component"
+>
+  <nav
+    data-test="navComponent"
+  >
+    <img
+      alt="Logo"
+      className="logo"
+      data-test="logo"
+      src="logo.png"
+    />
+    <a
+      className="home-link"
+      data-test="homeLink"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+  </nav>
+  <div
+    className="filter-container"
+    data-test="Filter"
+  >
+    <span
+      className="filter-text"
+    >
+      Filter by genre
+    </span>
+    <select
+      data-test="Filter-select"
+      name="genre"
+      onChange={[Function]}
+    >
+      <option
+        value="All"
+      >
+        All
+      </option>
+    </select>
+  </div>
+  <div
+    className="movies-container"
+  />
+  <div
+    className="footer"
+    data-test="Footer"
+  >
+    <span>
+      Copyright 2021
+    </span>
+  </div>
+</div>
+`;

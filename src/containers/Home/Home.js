@@ -35,7 +35,7 @@ const Home = ({
   const filterMovies = movies && filter !== 'All' ? movies.filter((movie) => movie.genre_ids.includes(parseInt(filter))) : movies;
 
   return (
-    <div>
+    <div data-test="home-component">
       <Navbar />
       <Filter data={genres} change={handleFilter} />
       <div className="movies-container">

@@ -4,9 +4,9 @@ import './Navbar.css';
 
 const Navbar = () => (
   (
-    <nav>
-      <img alt="Logo" src={logo} className="logo" />
-      <Link to="/" className="home-link">Home</Link>
+    <nav data-test="navComponent">
+      <img data-test="logo" alt="Logo" src={logo} className="logo" />
+      <Link to="/" className="home-link" data-test="homeLink">Home</Link>
     </nav>
   )
 );

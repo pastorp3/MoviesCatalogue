@@ -12,13 +12,13 @@ const Movie = ({
   const imgSrc = `https://image.tmdb.org/t/p/w500/${poster}`;
   const link = `/movie/${id}`;
   return (
-    <div className="Movie-card">
-      <div>
+    <div data-test="Movie-card" className="Movie-card">
+      <div data-test="Movie-poster">
         <Link to={link}>
           <img alt="poster" src={imgSrc} className="poster" />
         </Link>
       </div>
-      <div className="movie-info">
+      <div data-test="Movie-info" className="movie-info">
         <span className="movie-title">{title}</span>
         <br />
         <span className="movie-date">{year}</span>

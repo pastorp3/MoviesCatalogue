@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter Component Should render according with snapshout whithout error 1`] = `
+<div
+  className="filter-container"
+  data-test="Filter"
+>
+  <span
+    className="filter-text"
+  >
+    Filter by genre
+  </span>
+  <select
+    data-test="Filter-select"
+    name="genre"
+    onChange={[Function]}
+  >
+    <option
+      value="All"
+    >
+      All
+    </option>
+  </select>
+</div>
+`;

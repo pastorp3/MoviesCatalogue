@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details Component Should render according with snapshout whithout error 1`] = `
+<div
+  data-test="Details"
+>
+  <nav
+    data-test="navComponent"
+  >
+    <img
+      alt="Logo"
+      className="logo"
+      data-test="logo"
+      src="logo.png"
+    />
+    <a
+      className="home-link"
+      data-test="homeLink"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+  </nav>
+  <div>
+    <div
+      className="poster-background"
+      style={
+        Object {
+          "backgroundImage": "url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/undefined)",
+        }
+      }
+    >
+      <div
+        className="main-container-details"
+      >
+        <div />
+        <div
+          className="details-text"
+        >
+          <span
+            className="details-title"
+          />
+          <br />
+          <span />
+          <span
+            className="details-language"
+          >
+            (
+            )
+          </span>
+          <span
+            className="details-dot"
+          >
+            |
+          </span>
+          <span
+            className="details-dot"
+          >
+            |
+          </span>
+          <span>
+            m
+          </span>
+          <br />
+          <div
+            className="details-second-container"
+          >
+            <div
+              className="details-progress"
+            >
+              <svg
+                className="CircularProgressbar "
+                data-test-id="CircularProgressbar"
+                style={Object {}}
+                viewBox="0 0 100 100"
+              >
+                <path
+                  className="CircularProgressbar-trail"
+                  d="
+      M 50,50
+      m 0,-46
+      a 46,46 0 1 1 0,92
+      a 46,46 0 1 1 0,-92
+    "
+                  fillOpacity={0}
+                  strokeWidth={8}
+                  style={
+                    Object {
+                      "strokeDasharray": "289.02652413026095px 289.02652413026095px",
+                      "strokeDashoffset": "0px",
+                    }
+                  }
+                />
+                <path
+                  className="CircularProgressbar-path"
+                  d="
+      M 50,50
+      m 0,-46
+      a 46,46 0 1 1 0,92
+      a 46,46 0 1 1 0,-92
+    "
+                  fillOpacity={0}
+                  strokeWidth={8}
+                  style={
+                    Object {
+                      "stroke": "#228B22",
+                      "strokeDasharray": "289.02652413026095px 289.02652413026095px",
+                      "strokeDashoffset": "NaNpx",
+                    }
+                  }
+                />
+                <text
+                  className="CircularProgressbar-text"
+                  style={
+                    Object {
+                      "fill": "#fff",
+                      "fontSize": "26px",
+                    }
+                  }
+                  x={50}
+                  y={50}
+                >
+                  NaN%
+                </text>
+              </svg>
+              <span
+                className="details-score"
+              >
+                User Score
+              </span>
+            </div>
+            <img
+              alt="playIcon"
+              className="play-icon"
+              src="play.png"
+            />
+            <span>
+              Play Trailer
+            </span>
+          </div>
+          <div
+            className="tagline"
+          />
+          <div
+            className="overview-title"
+          >
+            Overview
+          </div>
+          <div />
+          <div
+            className="details-status"
+          >
+            <span>
+              Status: 
+            </span>
+            <span />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="details-companies"
+    >
+      <h2>
+        Production Companies
+      </h2>
+      <div
+        className="companies-container"
+      />
+    </div>
+  </div>
+  <div
+    className="footer"
+    data-test="Footer"
+  >
+    <span>
+      Copyright 2021
+    </span>
+  </div>
+</div>
+`;

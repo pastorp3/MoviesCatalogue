@@ -4,10 +4,10 @@ import './Filter.css';
 
 const Filter = ({ data, change }) => (
   (
-    <div className="filter-container">
+    <div data-test="Filter" className="filter-container">
       <span className="filter-text">Filter by genre</span>
       {
-        data && <select name="genre" onChange={(event) => change(event)}>
+        data && <select data-test="Filter-select" name="genre" onChange={(event) => change(event)}>
           <option value="All">All</option>
           {data.map((genre) => <option value={genre.id} key={genre.id}>{genre.name}</option>)}
           </select>

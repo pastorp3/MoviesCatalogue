@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie Component Should render according with snapshout whithout error 1`] = `
+<div
+  className="Movie-card"
+  data-test="Movie-card"
+>
+  <div
+    data-test="Movie-poster"
+  >
+    <a
+      href="/movie/1"
+      onClick={[Function]}
+    >
+      <img
+        alt="poster"
+        className="poster"
+        src="https://image.tmdb.org/t/p/w500/Test Poster"
+      />
+    </a>
+  </div>
+  <div
+    className="movie-info"
+    data-info="Movie-info"
+  >
+    <span
+      className="movie-title"
+    >
+      Test Title
+    </span>
+    <br />
+    <span
+      className="movie-date"
+    >
+      01-01-2021
+    </span>
+  </div>
+</div>
+`;

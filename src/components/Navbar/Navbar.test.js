@@ -1,5 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+import { BrowserRouter } from 'react-router-dom';
 import Navbar from './Navbar';
 import { findByTestAtrr } from '../../../Utils';
 
@@ -28,4 +30,9 @@ describe('Navbar component', () => {
     const wrapper = findByTestAtrr(component, 'homeLink');
     expect(wrapper.length).toBe(1);
   })
+
+  it('Should render according with snapshout whithout error', () => {
+    const tree = renderer.create(<BrowserRouter><Navbar /></BrowserRouter>).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 })

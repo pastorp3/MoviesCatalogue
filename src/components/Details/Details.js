@@ -24,7 +24,7 @@ const Details = () => {
   };
   const percentage = details.vote_average * 10;
   return (
-    <div>
+    <div data-test="Details">
       <Navbar />
       <div>
         <div className="poster-background" style={styles}>

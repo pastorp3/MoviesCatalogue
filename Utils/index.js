@@ -1,4 +1,7 @@
 import { checkPropTypes } from 'prop-types';
+import { applyMiddleware, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import RootReducer from '../src/reducers/index';
 
 export const findByTestAtrr = (component, attr) => {
   const wrapper = component.find(`[data-test='${attr}']`);

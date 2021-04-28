@@ -19,7 +19,7 @@ describe('Movies Reducer', () => {
 
   it('Should return a new state and update movies', () => {
     const movies = [{ title: 'Test1' }, { title: 'Test2' }];
-    const movie = { results: movies} ;
+    const movie = { results: movies };
     const newState = moviesReducer(undefined, {
       type: UPDATE_MOVIES,
       payload: movie,

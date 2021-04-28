@@ -10,7 +10,7 @@ describe('Genre Reducer', () => {
   it('Should return a new state if reciving a type and set genres', () => {
     const newGenres = [{ id: 1, name: 'Test 1' }];
     const payload = { genres: newGenres };
-    const newState = genreReducer(undefined,{
+    const newState = genreReducer(undefined, {
       type: SET_GENRE,
       payload,
     });

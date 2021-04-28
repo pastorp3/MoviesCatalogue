@@ -24,7 +24,7 @@ describe('Home Component', () => {
         release_date: '01-01-21',
         poster_path: 'Test1',
         id: 1,
-      }]
+      }],
     };
     wrapper = setUp(initialState);
   });
@@ -32,7 +32,7 @@ describe('Home Component', () => {
   it('Should render without error', () => {
     const component = findByTestAtrr(wrapper, 'home-component');
     expect(component.length).toBe(1);
-  })
+  });
 
   it('Should render according with snapshout whithout error', () => {
     const store = createStore(RootReducer, applyMiddleware(thunk));
@@ -41,7 +41,8 @@ describe('Home Component', () => {
         <Provider store={store}>
           <Home />
         </Provider>
-      </BrowserRouter>).toJSON();
+      </BrowserRouter>
+      ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

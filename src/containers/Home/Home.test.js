@@ -41,8 +41,8 @@ describe('Home Component', () => {
         <Provider store={store}>
           <Home />
         </Provider>
-      </BrowserRouter>
-      ).toJSON();
+      </BrowserRouter>,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

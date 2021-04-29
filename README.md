@@ -4,7 +4,12 @@
  
 ![ScreenShot](public/movies.png)
 
-This a Movies Catalogue website where you can find some of the best movies of the moment and information about it.
+This a Movies Catalogue website where you can find some of the best movies of the moment and information about them.
+
+## Description
+
+My project is a movies catalog to demonstrate my knowledge of react and redux, here you can find some of the most popular movies at the moment, In case that you want to see a specific genre you can filter by genre, all of the data is fetching for the movies database API.
+
 
 ## Built With
 
@@ -23,7 +28,7 @@ This a Movies Catalogue website where you can find some of the best movies of th
 
 ## Getting Started
 
-This is a Movies Catalogue App where you can find some of the movies at the moment, also you can filet it by genre.
+This is a Movies Catalogue App where you can find some of the movies at the moment, also you can filter it by genre.
 
 
 To get a local copy up and running follow these simple example steps.
@@ -37,15 +42,21 @@ Clone the repo with the command:
 > git clone https://github.com/pastorp3/MoviesCatalogue.git
 
 ### Install
-Open the project folder and install of the dependencies with:
+Open the project folder and install the dependencies with:
 
 > npm install 
 
 ### Usage
 
-Run the app on the your local browser:
+Run the app on your local browser:
 
 > npm start
+
+### Test
+
+Run all the tests with:
+
+> npm test
 
 ## Authors
 

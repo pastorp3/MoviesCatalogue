@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Routes from './Router';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import reportWebVitals from './reportWebVitals';
+import RootReducer from './reducers';
+import Routes from './Router';
+
+const store = createStore(RootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <Routes />,
+  <Provider store={store}>
+    <Routes />
+  </Provider>,
   document.getElementById('root'),
 );
 

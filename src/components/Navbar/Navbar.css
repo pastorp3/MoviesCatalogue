@@ -1,0 +1,23 @@
+.logo {
+  width: 90px;
+  height: 70px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px 100px;
+  background-color: blue;
+  color: white;
+}
+
+.home-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.home-link:hover {
+  color: black;
+}

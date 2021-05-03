@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component Should render according with snapshout whithout error 1`] = `
+<nav
+  data-test="navComponent"
+>
+  <img
+    alt="Logo"
+    className="logo"
+    data-test="logo"
+    src="logo.png"
+  />
+  <a
+    className="home-link"
+    data-test="homeLink"
+    href="/"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+</nav>
+`;
